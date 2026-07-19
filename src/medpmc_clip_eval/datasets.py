@@ -575,6 +575,5 @@ REGISTRY = {
 
 ALIASES = {
     "all": list(REGISTRY) + ["microbench"],
-    "all-open": [k for k, v in REGISTRY.items() if not v.restricted] + ["microbench"],
     "nonmicrobench": list(REGISTRY),
 }
