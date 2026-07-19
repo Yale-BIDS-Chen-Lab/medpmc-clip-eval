@@ -1,0 +1,30 @@
+include,dataset,specialty,source
+1,BreastMNIST,breast ultrasound,nonmicrobench
+1,ChestMNIST,chest x-ray,nonmicrobench
+1,DAD,surgery,nonmicrobench
+1,DeepDRiD,color fundus,nonmicrobench
+1,HAM10000,Dermoscopy,nonmicrobench
+1,LC25000_Colon,Neoplastic,nonmicrobench
+1,LC25000_Lung,Neoplastic,nonmicrobench
+1,PCAM,Neoplastic,nonmicrobench
+1,RSNA_Pneumonia,chest x-ray,nonmicrobench
+1,acevedo_et_al_2020,Cytopathology,microbench
+1,burgess_et_al_2024_contour,Morphological profiling,microbench
+1,burgess_et_al_2024_eccentricity,Morphological profiling,microbench
+1,burgess_et_al_2024_texture,Morphological profiling,microbench
+0,colocalization_benchmark,,microbench
+1,empiar_sbfsem,Structure identification,microbench
+1,eulenberg_et_al_2017_brightfield,Cell cycle analysis,microbench
+1,eulenberg_et_al_2017_darkfield,Cell cycle analysis,microbench
+1,eulenberg_et_al_2017_epifluorescence,Cell cycle analysis,microbench
+1,hussain_et_al_2019,Cytopathology,microbench
+1,icpr2020_pollen,Structure identification,microbench
+1,jung_et_al_2022,Cytopathology,microbench
+1,kather_et_al_2016,Neoplastic,microbench
+0,kather_et_al_2018,,microbench
+0,kather_et_al_2018_val7k,,microbench
+1,nirschl_et_al_2018,non-neoplastic,microbench
+1,nirschl_unpub_fluorescence,Structure identification,microbench
+1,tang_et_al_2019,non-neoplastic,microbench
+1,wong_et_al_2022,non-neoplastic,microbench
+1,wu_et_al_2023,non-neoplastic,microbench

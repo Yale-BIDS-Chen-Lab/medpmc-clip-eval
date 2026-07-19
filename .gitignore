@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local configs
+config.json
+*.local.json
+
+# Data/cache
+cache/
+data/
+datasets/
+*.h5
+*.hdf5
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+
+# Model weights/checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Outputs
+outputs/
+outputs_*/
+predictions/
+results/
+*.npz
+*.pkl
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

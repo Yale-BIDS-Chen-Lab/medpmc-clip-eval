@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medpmc-clip-eval"
+version = "0.3.7"
+description = "Reproducible public evaluation pipeline for MedPMC-CLIP"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Yale BIDS Chen Lab"}]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+    "h5py>=3.8",
+    "openpyxl>=3.1",
+  "Pillow>=10.0",
+  "scikit-learn>=1.3",
+  "torch>=2.1",
+  "torchvision>=0.16",
+  "open-clip-torch>=2.24",
+  "huggingface-hub>=0.23",
+  "datasets>=2.18",
+  "transformers>=4.40",
+  "medmnist>=3.0",
+  "tqdm>=4.66",
+  "safetensors>=0.4",
+  "pydicom>=2.4",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+kaggle = ["kagglehub>=0.3"]
+dev = ["pytest>=8", "ruff>=0.5", "build>=1.2"]
+
+[project.scripts]
+medpmc-clip-eval = "medpmc_clip_eval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "0.3.7"
+
+[tool.setuptools.package-data]
+medpmc_clip_eval = ["benchmark_manifest.csv"]

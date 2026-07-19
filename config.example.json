@@ -1,0 +1,45 @@
+{
+  "data_paths": {
+    "medmnist_root": "/path/to/cache/medmnist",
+    "pcam_x": "/path/to/PCAM/camelyonpatch_level_2_split_test_x.h5",
+    "pcam_y": "/path/to/PCAM/camelyonpatch_level_2_split_test_y.h5",
+    "deepdrid_csv": "/path/to/DeepDRiD/regular_fundus_images/Online-Challenge1&2-Evaluation/Challenge1_labels.csv",
+    "deepdrid_images": "/path/to/DeepDRiD/regular_fundus_images/Online-Challenge1&2-Evaluation/Images",
+    "rsna_csv": "/path/to/rsna/stage_2_train_labels.csv",
+    "rsna_images": "/path/to/rsna/images",
+    "ham10000_csv": "/path/to/HAM10000/test/ISIC2018_Task3_Test_GroundTruth.csv",
+    "ham10000_images": "/path/to/HAM10000/test/ISIC2018_Task3_Test_Input",
+    "lc25000_root": "/path/to/LC25000/Test Set",
+    "dad_annotations": "/path/to/DAD/annotations/instances_test.json",
+    "dad_images": "/path/to/DAD/images/test"
+  },
+  "models": {
+    "medpmc": {
+      "repo_id": "Yale-BIDS-Chen/medpmc-clip-l-14_jun24_v1",
+      "filename": "open_clip_pytorch_model.safetensors",
+      "model_name": "ViT-L-14"
+    },
+    "bmc": {
+      "repo_id": "BIOMEDICA/BMC_CLIP_CF",
+      "filename": "BMC_CLIP_CF.pt",
+      "model_name": "ViT-L-14"
+    },
+    "biomedclip": {
+      "model_id": "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+    },
+    "pmcclip": {
+      "model_id": "hf-hub:ryanyip7777/pmc_vit_l_14"
+    },
+    "openclip": {
+      "model_name": "ViT-L-14",
+      "pretrained": "commonpool_xl_clip_s13b_b90k"
+    },
+    "coca": {
+      "model_name": "coca_ViT-L-14",
+      "pretrained": "mscoco_finetuned_laion2b_s13b_b90k"
+    },
+    "medsiglip": {
+      "model_id": "google/medsiglip-448"
+    }
+  }
+}
