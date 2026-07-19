@@ -73,7 +73,7 @@ def parse_datasets(value: str, manifest_path: Path | None = None) -> list[str]:
     requested = [x.strip().lower() for x in value.split(",") if x.strip()]
     expanded = []
     for item in requested:
-        if item in {"paper", "manuscript", "medpmc-benchmarks"}:
+        if item == "medpmc-benchmarks":
             expanded.extend(selected_standard_keys(manifest_path))
             expanded.append("microbench")
         else:
@@ -119,8 +119,7 @@ def build_parser():
         help=(
             "Comma-separated dataset keys or aliases. The default "
             "`medpmc-benchmarks` alias uses the 26 benchmarks included "
-            "in benchmark_manifest.csv. Legacy aliases `paper` and "
-            "`manuscript` are also accepted."
+            "in benchmark_manifest.csv. "
         ),
     )
     parser.add_argument(
@@ -469,7 +468,7 @@ def main():
     if args.list_datasets:
         for key in list(REGISTRY) + ["microbench"]:
             print(key)
-        print("\nAliases: medpmc-benchmarks, manuscript, paper, all, all-open, nonmicrobench")
+        print("\nAliases: medpmc-benchmarks, nonmicrobench, all")
         print(
             f"Selected MicroBench subsets in manifest: "
             f"{len(selected_microbench_names(manifest_path))}"
