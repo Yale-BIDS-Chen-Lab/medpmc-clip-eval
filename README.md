@@ -204,9 +204,7 @@ Available dataset aliases:
 | Alias | Meaning |
 |---|---|
 | `medpmc-benchmarks` | Exact benchmark rows selected in `benchmark_manifest.csv` |
-| `manuscript`, `paper` | Legacy aliases for `medpmc-benchmarks` |
 | `nonmicrobench` | The nine standard non-MicroBench datasets |
-| `all-open` | Unrestricted standard datasets plus selected MicroBench subsets |
 | `all` | All standard datasets plus selected MicroBench subsets |
 
 Requesting `microbench` evaluates only the manifest-selected MicroBench subsets, not every subset in `jnirschl/uBench`.
